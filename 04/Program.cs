@@ -11,5 +11,6 @@ Console.Write("Введите координаты Y второй точки: ")
 int YB = int.Parse(Console.ReadLine() ?? "");
 
 double result = Math.Sqrt(Math.Pow(XA - XB, 2) + Math.Pow(YB - YA, 2));
+result = Math.Round(result, 2);
 
-Console.WriteLine($"A ({XA}, {YA}); B ({XB}, {YB}) -> {result}");
+Console.WriteLine($"A ({XA},{YA}); B ({XB},{YB}) -> {result}");
